@@ -1,11 +1,9 @@
 
 
 *******************************************************************************
-* Instructions on how to compile and run program.                             *
-*			                                                      *
+* Instructions on how to compile and run program.                             *			                                                      *
 * Name     : Sarvesh Sadhoo
-                                                   *
-* UTA ID   : 1000980763			                                      *
+                                                   *			                                      *
 * Project  : Multithreaded Web Proxy Server  CSE5344 – Project 1 (Fall 2013)  *
  
 * Date     : November 3,2013                                                  *  
