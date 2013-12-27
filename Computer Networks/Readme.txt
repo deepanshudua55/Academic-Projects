@@ -1,11 +1,8 @@
 
-
 *******************************************************************************
 * Instructions on how to compile and run program.                             *			                                                      *
-* Name     : Sarvesh Sadhoo
-                                                   *			                                      *
-* Project  : Multithreaded Web Proxy Server  CSE5344 – Project 1 (Fall 2013)  *
- 
+* Name     : Sarvesh Sadhoo                                                   *			                                      *
+* Project  : Multithreaded Web Proxy Server  CSE5344 ï¿½ Project 1 (Fall 2013) *
 * Date     : November 3,2013                                                  *  
 *******************************************************************************
 
