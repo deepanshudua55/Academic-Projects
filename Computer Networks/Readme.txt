@@ -1,8 +1,7 @@
-
 *******************************************************************************
 * Instructions on how to compile and run program.                             *			                                                      *
 * Name     : Sarvesh Sadhoo                                                   *			                                      *
-* Project  : Multithreaded Web Proxy Server  CSE5344 � Project 1 (Fall 2013) *
+* Project  : Multithreaded Web Proxy Server  CSE5344 � Project 1 (Fall 2013) * 
 * Date     : November 3,2013                                                  *  
 *******************************************************************************
 
@@ -67,19 +66,3 @@ The following website where tested on the proxy web server.
 
 Note: The above website were working fine with the server. The website were getting cached as well.
 
-References:
------------
-
-1. Python BOOK: http://heather.cs.ucdavis.edu/~matloff/Python/PLN/FastLanePython.pdf: Introduction to Python
-2. HTTP RESPONSE CODES: http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
-3. PYTHON DoCS: http://docs.python.org/2/howto/sockets.html
-4. Stackoverflow
-5. TURORIAL POINTS WEBSITE: http://www.tutorialspoint.com/python/python_networking.htm
-
-
-IMPORTANT NOTE:
----------------
-
-While requesting certain websites you might not be able to view all the websites or you might see some error in the cmd. 
-These error or issues arise due to the fact that we can not handle all the request while a website is accessed. Also these
-issues don't crash the proxy server. You will be able to make new request for different websites. 
