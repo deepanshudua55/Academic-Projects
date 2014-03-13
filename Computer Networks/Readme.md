@@ -53,5 +53,6 @@ In this project,web proxy server is able to perform the following functionalitie
 9. www.nbcnews.com
 10. www.w3schools.com
 
-Note: The above website were working fine with the server. The website were getting cached as well.
+#####Note: 
+The above website were working fine with the server. The website were getting cached as well.
 
