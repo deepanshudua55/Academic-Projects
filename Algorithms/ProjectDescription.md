@@ -1,4 +1,4 @@
-## Web Crawler
+## Project Description - Web Crawler
 
 Write a web crawler/spider (click here for the Wikipedia definition) which crawls the cse.uta.edu (CSE) domain. 
 E.g.: While starting from cse.uta.edu, if cse.uta.edu/faculty is encountered, it is followed. If www.uta.edu is found 
