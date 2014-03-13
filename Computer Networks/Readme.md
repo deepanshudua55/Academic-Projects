@@ -1,4 +1,4 @@
-# Multi Threaded Web Server - Python
+##Multi Threaded Web Server - Python
 
 ####Project Specification:
 
@@ -11,17 +11,13 @@ In this project,web proxy server is able to perform the following functionalitie
 4. Caching web pages each time the client makes a particular request for the first time and
    sending the cached web pages to the client when a cache hit occurs. 
 
-Development Environment:
-------------------------
+####Development Environment:
 
-Languages  	   : Python 2.7
-Text Editor/IDE    : Note Pad ++ /PyCharm
-Operating System   : Windows 7
-Running Code	   : Command Prompt
+1. Languages  	   : Python 2.7
+2. Text Editor/IDE    : Note Pad ++ /PyCharm
+3. Operating System   : Windows 7
 
-
-Steps on how to compile and run program:
-----------------------------------------
+####Steps on how to compile and run program:
 
  1. Install or use Python 2.7 version.
  2. Open python file (sarvesh.py) in any text editor (Note Pad ++ or text Wrangler) to view the source code.
@@ -33,8 +29,7 @@ Steps on how to compile and run program:
  8. View the cmd to check the processing happening at the proxy server.
 
 
-Project/Program Feaures:
-------------------------
+####Project/Program Feaures:
 
 1. The program is able to succesfully Receiving HTTP requests (GET and POST method) from a browser and forwarding them to the origin server
 2. The Program can handle errors
@@ -42,10 +37,10 @@ Project/Program Feaures:
 4. Cache has also been implemented in the program.
 
 
-Specific Observations:
------------------------
+####Specific Observations:
 
-The following website where tested on the proxy web server. 
+
+#####The following website where tested on the proxy web server. 
 
 1. www.google.com
 2. www.cnn.com
