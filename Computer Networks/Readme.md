@@ -1,12 +1,6 @@
-*******************************************************************************
-* Instructions on how to compile and run program.                             *			                                                      *
-* Name     : Sarvesh Sadhoo                                                   *			                                      *
-* Project  : Multithreaded Web Proxy Server  CSE5344 � Project 1 (Fall 2013) * 
-* Date     : November 3,2013                                                  *  
-*******************************************************************************
+# Multi Threaded Web Server - Python
 
-Project Specification:
-----------------------
+####Project Specification:
 
 In this project,web proxy server is able to perform the following functionalities:
 
