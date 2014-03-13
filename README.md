@@ -1,6 +1,6 @@
-# Table of Contents
+# List of Academic Projects.
+
+1. [Python Web Crawler - Python](https://github.com/srvuta/Academic-Projects/tree/master/Algorithms)
+2. [Multi Threaded Web Server - Python](https://github.com/srvuta/Academic-Projects/tree/master/Computer%20Networks)
  
-* [Team Members](#team-members)
- 
-# <a name="team-members"></a>Team Members
-* "J. Jesus. P. Aguinaga" <admin@listforks.com>
+
