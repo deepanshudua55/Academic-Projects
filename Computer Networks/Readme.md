@@ -1,4 +1,4 @@
-##Multi Threaded Web Server - Python
+##Multi Threaded Proxy Server - Python
 
 ####Project Specification:
 
