@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+  Project 2 : A Movie Web Application
+  Student Name: Sarvesh Sadhoo (1000980763)
+  URL: http://omega.uta.edu/~sxs0763/project2/movies.html
+-->
+<html lang="en">
+  <head>
+  <h1> OpenBase: The Online Movie Database</h1>  
+    <title>Display Movie Information</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="movies.js"></script>
+  </head>
+  
+  <body>
+    <form>
+       <label>Movie title: <input type="text" id="form-input"/></label>
+       <input type="button" onclick="sendRequest();" value="Display Info"/> 
+    </form>
+    <br>
+    <div id="tablespace" style="cursor:default"></div>
+    
+      <div ><img id = "poster" style=" height: 250px; width: 225px; position: absolute; top: 120px; left: 900px;" /></div>
+      <br><br><br><br>
+      <div id = "title" style="width: 500px; font-weight:bold; position: absolute; top: 380px; left: 900px"></div>
+      <br><br>
+      <div id = "genres" style=" width: 500px; position: absolute; top: 410px; left: 900px;"></div> 
+      <br><br>
+      <div id = "cast" style="position: absolute; top: 450px; left: 900px;" ></div> 
+      <br><br>
+      <div id = "overview" style="width: 500px; position: absolute; top: 490px; left: 900px;"></div> 
+  </body>
+</html>

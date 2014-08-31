@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- Student Name: Sarvesh Sadhoo (1000980763)  -->
+<!-- Project 3: Web Mashup: Display Best Restaurants on a Map  -->
+<!-- Link: http://omega.uta.edu/~sxs0763/project3/yelp.html -->
+<!-- Final -->
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Web Mashup: Display Best Restaurants on a Map</title>
+    <style>
+      html { height: 100% }
+      body { height: 100%; margin: 10px; padding: 0 }
+      .map-canvas { float: right; height: 600px;  width: 500px; }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHnLYm7CLppeASFWnAKb8iw-2bu3ZpoDA&sensor=false"></script>
+    <script type="text/javascript" src="yelp.js"></script>
+  </head>
+  <body>
+    <div id="map-canvas" class ="map-canvas"></div>
+    <form>
+      <label>Search Terms: <input type="text" id="search"/></label>
+      <input type="button" onclick="sendRequest();" value="Find" style="width: 50px"/>
+    </form>
+    <div style="width: 500px; position: absolute; top: 60px; left: 10px;" id="description"/></div>
+    <!--<div id = "map_bounds" style="position: absolute; top: 40px; left: 10px;" ></div> -->
+  </body>
+</html>

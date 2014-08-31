@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "Private Student Space"
+AuthUserFile /home/f/fe/fegaras/public_html/project2/.htpasswd
+
+<Limit READ GET POST>
+require valid-user
+</Limit>
