@@ -1,4 +1,4 @@
-## List of Projects Completed In Web Data & XML Course.
+### List of Projects Completed In Web Data & XML Course.
 
 1. [Project 1 - A Simple Pong Game]()
 2. [Project 2 - A Movie Web Application]()
