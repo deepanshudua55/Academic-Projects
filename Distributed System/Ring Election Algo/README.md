@@ -1,26 +1,35 @@
-#####Java implementaion of a leader election using Ring Algorithm (Election In A Ring). 
+###Java Implementaion of a Leader Election Using Ring Algorithm (Election In A Ring). 
 
-*Background:
 
--assume that processes form a ring: each process only sends messages to the next process in the ring
-- Active list: its info on all other active processes
-- assumption: message continues around the ring even if a process along the way has crashed.
+####Election Algorithms
+
+The coordinator election problem is to choose a process from among a group of processes on different processors in a distributed system to act as the central coordinator.
+An election algorithm is an algorithm for solving the coordinator election problem. By the nature of the coordinator election problem, any election algorithm must be a distributed algorithm.
+ -a group of processes on different machines need to choose a coordinator
+ -peer to peer communication: every process can send messages to every other process.
+ -Assume that processes have unique IDs, such that one is highest
+ -Assume that the priority of process Pi is i
+
+1. Assume that processes form a ring: each process only sends messages to the next process in the ring
+2. Active list: Its info on all other active processes
+3. Assumption: Message continues around the ring even if a process along the way has crashed.
  
  
-Background: any process Pi sends a message to the current coordinator; if no response in T time units, Pi initiates an election
+#####Background (Ring Algorithm):
+any process Pi sends a message to the current coordinator; if no response in T time units, Pi initiates an election
 initialize active list to empty.
 Send an “Elect(i)” message to the right. + add i to active list.
  
 If a process receives an “Elect(j)” message
-            (a) this is the first message sent or seen
-                        initialize its active list to [i,j]; send “Elect(i)” + send “Elect(j)”
-            (b) if i != j, add i to active list + forward “Elect(j)” message to active list
-            (c) otherwise (i = j), so process i has complete set of active processes in its active list.
-                        => choose highest process ID + send “Elected (x)” message to neighbor
+  (a) this is the first message sent or seen
+              initialize its active list to [i,j]; send “Elect(i)” + send “Elect(j)”
+  (b) if i != j, add i to active list + forward “Elect(j)” message to active list
+  (c) otherwise (i = j), so process i has complete set of active processes in its active list.
+              => choose highest process ID + send “Elected (x)” message to neighbor
 If a process receives “Elected(x)” message,
             set coordinator to x
            
-Example:
+######Example:
  
 Suppose that we have four processes arranged in a ring:  P1 à P2 à P3 à P4 à P1 …
 P4 is coordinator
