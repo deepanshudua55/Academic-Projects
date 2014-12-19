@@ -17,6 +17,7 @@ An election algorithm is an algorithm for solving the coordinator election probl
  
 #####Background (Ring Algorithm):
 Any process Pi sends a message to the current coordinator; if no response in T time units, Pi initiates an election
+
 1. Initialize active list to empty.
 2. Send an “Elect(i)” message to the right. + add i to active list.
  
