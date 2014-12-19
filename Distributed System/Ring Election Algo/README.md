@@ -1,4 +1,4 @@
-Java implementaion of a leader election using Election In A Ring => Ring Algorithm. 
+#####Java implementaion of a leader election using Ring Algorithm (Election In A Ring). 
 
 *Background:
 
