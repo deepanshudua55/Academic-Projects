@@ -1,4 +1,4 @@
-###Java Implementaion of a Leader Election Using Ring Algorithm (Election In A Ring). 
+###Java Implementaion of a Leader Election Using Ring Algorithm. 
 
 
 ####Election Algorithms
@@ -16,9 +16,9 @@ An election algorithm is an algorithm for solving the coordinator election probl
  
  
 #####Background (Ring Algorithm):
-any process Pi sends a message to the current coordinator; if no response in T time units, Pi initiates an election
-initialize active list to empty.
-Send an “Elect(i)” message to the right. + add i to active list.
+Any process Pi sends a message to the current coordinator; if no response in T time units, Pi initiates an election
+1. Initialize active list to empty.
+2. Send an “Elect(i)” message to the right. + add i to active list.
  
 If a process receives an “Elect(j)” message
   (a) this is the first message sent or seen
@@ -31,19 +31,21 @@ If a process receives “Elected(x)” message,
            
 ######Example:
  
-Suppose that we have four processes arranged in a ring:  P1 à P2 à P3 à P4 à P1 …
-P4 is coordinator
-Suppose P1 + P4 crash
-Suppose P2 detects that coordinator P4 is not responding
-P2 sets active list to [ ]
-P2 sends “Elect(2)” message to P3; P2 sets active list to [2]
-P3 receives “Elect(2)”
-This message is the first message seen, so P3 sets its active list to [2,3]
-P3 sends “Elect(3)” towards P4 and then sends “Elect(2)” towards P4
-The messages pass P4 +  P1 and then reach P2
-P2 adds 3 to active list [2,3]
-P2 forwards “Elect(3)” to P3
-P2 receives the “Elect(2) message
-            P2 chooses P3 as the highest process in its list [2, 3] and sends an “Elected(P3)” message
-P3 receives the “Elect(3)” message
-            P3 chooses P3 as the highest process in its list [2, 3] + sends an “Elected(P3)” message
+Suppose that we have four processes arranged in a ring:  P1 -> P2 -> P3 -> P4 -> P1
+1. P4 is coordinator
+2. Suppose P1 + P4 crash
+3. Suppose P2 detects that coordinator P4 is not responding
+4. P2 sets active list to [ ]
+5. P2 sends “Elect(2)” message to P3; P2 sets active list to [2]
+6. P3 receives “Elect(2)”
+7. This message is the first message seen, so P3 sets its active list to [2,3]
+8. P3 sends “Elect(3)” towards P4 and then sends “Elect(2)” towards P4
+9. The messages pass P4 +  P1 and then reach P2
+10. P2 adds 3 to active list [2,3]
+11. P2 forwards “Elect(3)” to P3
+12. P2 receives the “Elect(2) message
+    P2 chooses P3 as the highest process in its list [2, 3] and sends an “Elected(P3)” message
+13. P3 receives the “Elect(3)” message
+    P3 chooses P3 as the highest process in its list [2, 3] + sends an “Elected(P3)” message
+
+Source: [Election In A Ring => Ring Algorithm] (http://www2.cs.uregina.ca/~hamilton/courses/330/notes/distributed/distributed.html)
