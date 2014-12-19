@@ -21,17 +21,17 @@ Any process Pi sends a message to the current coordinator; if no response in T t
 2. Send an “Elect(i)” message to the right. + add i to active list.
  
 If a process receives an “Elect(j)” message
-  (a) this is the first message sent or seen
-              initialize its active list to [i,j]; send “Elect(i)” + send “Elect(j)”
-  (b) if i != j, add i to active list + forward “Elect(j)” message to active list
-  (c) otherwise (i = j), so process i has complete set of active processes in its active list.
-              => choose highest process ID + send “Elected (x)” message to neighbor
-If a process receives “Elected(x)” message,
-            set coordinator to x
+1. this is the first message sent or seen
+2. initialize its active list to [i,j]; send “Elect(i)” + send “Elect(j)”
+3. if i != j, add i to active list + forward “Elect(j)” message to active list
+4. otherwise (i = j), so process i has complete set of active processes in its active list.
+5. choose highest process ID + send “Elected (x)” message to neighbor
+6. If a process receives “Elected(x)” message,
+7. set coordinator to x
            
 ######Example:
- 
 Suppose that we have four processes arranged in a ring:  P1 -> P2 -> P3 -> P4 -> P1
+
 1. P4 is coordinator
 2. Suppose P1 + P4 crash
 3. Suppose P2 detects that coordinator P4 is not responding
@@ -47,5 +47,6 @@ Suppose that we have four processes arranged in a ring:  P1 -> P2 -> P3 -> P4 ->
     P2 chooses P3 as the highest process in its list [2, 3] and sends an “Elected(P3)” message
 13. P3 receives the “Elect(3)” message
     P3 chooses P3 as the highest process in its list [2, 3] + sends an “Elected(P3)” message
-1. test
+
+
 Source: [Election In A Ring => Ring Algorithm] (http://www2.cs.uregina.ca/~hamilton/courses/330/notes/distributed/distributed.html)
