@@ -22,6 +22,7 @@ Any process Pi sends a message to the current coordinator; if no response in T t
 2. Send an “Elect(i)” message to the right. + add i to active list.
  
 If a process receives an “Elect(j)” message
+
 1. this is the first message sent or seen
 2. initialize its active list to [i,j]; send “Elect(i)” + send “Elect(j)”
 3. if i != j, add i to active list + forward “Elect(j)” message to active list
