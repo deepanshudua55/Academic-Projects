@@ -47,5 +47,5 @@ Suppose that we have four processes arranged in a ring:  P1 -> P2 -> P3 -> P4 ->
     P2 chooses P3 as the highest process in its list [2, 3] and sends an “Elected(P3)” message
 13. P3 receives the “Elect(3)” message
     P3 chooses P3 as the highest process in its list [2, 3] + sends an “Elected(P3)” message
-
+1. test
 Source: [Election In A Ring => Ring Algorithm] (http://www2.cs.uregina.ca/~hamilton/courses/330/notes/distributed/distributed.html)
