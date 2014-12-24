@@ -7,6 +7,8 @@
 * [Distributed System CSE 5306](https://github.com/srv89/Academic-Projects/tree/master/Distributed%20System)
  1. [Instant messaging System](https://github.com/srv89/Academic-Projects/tree/master/Distributed%20System/Instant%20Messaging%20App)
  2. [Ring Coordinator Election Algorithm](https://github.com/srv89/Academic-Projects/tree/master/Distributed%20System/Ring%20Election%20Algo)
+* [Data Mining CSE5334](https://github.com/srv89/Academic-Projects/tree/master/Data%20Mining)
+ 1. [Multi Threaded Proxy Server - Python](https://github.com/srvuta/Academic-Projects/tree/master/Computer%20Networks)
 * [Web Data Management & XML CSE5335](https://github.com/srv89/Academic-Projects/tree/master/Web%20Data%20Management%20%26%20XML)
  1. [Project 1 - A Simple Pong Game](https://github.com/srv89/Academic-Projects/tree/master/Web%20Data%20Management%20%26%20XML/Pong)
  2. [Project 2 - A Movie Web Application](https://github.com/srv89/Academic-Projects/tree/master/Web%20Data%20Management%20%26%20XML/Project2)
