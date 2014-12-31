@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)file:///Users/srv/Desktop/Test/piechart.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+
+<script type="text/javascript" src="./piechart_files/jquery-1.7.1.min.js"></script>
+<script src="./piechart_files/highcharts.js"></script>
+<script src="./piechart_files/exporting.js"></script>
+<script type="text/javascript">
+    $(function () {
+    $('#container').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: 1,//null,
+            plotShadow: false
+        },
+        title: {
+            text: 'Titanic: Survival Data Prediction'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Percentage of Passenger Survived',
+            data: [
+                ['Survived No',    266.0],
+                ['Survived Yes',   151.0]
+            ]
+        }]
+    });
+});
+
+
+</script>
+</head>
+<body>
+<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 600px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="600" height="400"><desc>Created with Highcharts 4.0.4</desc><defs><clippath id="highcharts-1"><rect x="0" y="0" width="580" height="339"></rect></clippath></defs><rect x="0" y="0" width="600" height="400" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><g class="highcharts-button" style="cursor:default;" stroke-linecap="round" transform="translate(566,10)"><title>Chart context menu</title><rect x="0.5" y="0.5" width="24" height="22" strokeWidth="1" fill="white" stroke="none" stroke-width="1" rx="2" ry="2"></rect><path fill="#E0E0E0" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5" stroke="#666" stroke-width="3" zIndex="1"></path><text x="0" zIndex="1" style="color:black;fill:black;" y="13"></text></g><path fill="rgba(124,181,236,0.25)" d="M 302.46781963381613 57.50000327713917 A 158 158 0 1 1 182.22607736401494 317.9606438285114 L 189.83835094857096 311.47579295328916 A 148 148 0 1 0 302.4698563658531 67.5000030697253 Z"></path><rect x="9.5" y="45.5" width="581" height="340" strokeWidth="-1" stroke="#C0C0C0" stroke-width="1" fill="none" zIndex="1"></rect><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(10,46) scale(1 1)" style="cursor:pointer;"><path fill="rgba(149,206,255,1)" d="M 292.4698563658531 21.500003069725295 A 148 148 0 1 1 179.83835094857096 265.47579295328916 L 292.5 169.5 A 0 0 0 1 0 292.5 169.5 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#434348" d="M 179.74243150243345 265.3630833351222 A 148 148 0 0 1 292.2944309691654 21.500142765698712 L 292.5 169.5 A 0 0 0 0 0 292.5 169.5 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path></g><g class="highcharts-markers" visibility="visible" zIndex="0.1" transform="translate(10,46) scale(1 1)"></g></g><text x="300" text-anchor="middle" class="highcharts-title" zIndex="4" style="color:#333333;font-size:18px;fill:#333333;width:536px;" y="25"><tspan>Titanic: Survival Data Prediction</tspan></text><g class="highcharts-data-labels highcharts-tracker" visibility="visible" zIndex="6" transform="translate(10,46) scale(1 1)" opacity="1" style="cursor:pointer;"><path fill="none" d="M 459.0581315768838 244.2192754340291 C 454.0581315768838 244.2192754340291 446.7970919554508 240.86110575160083 436.81316247598045 236.24362243826195 L 426.8292329965101 231.62613912492307" stroke="#7cb5ec" stroke-width="1"></path><path fill="none" d="M 125.9418684231162 94.7807245659709 C 130.9418684231162 94.7807245659709 138.20290804454913 98.13889424839917 148.1868375240195 102.75637756173805 L 158.17076700348986 107.37386087507693" stroke="#434348" stroke-width="1"></path><g zIndex="1" style="cursor:pointer;" transform="translate(464,234)"><text x="3" zIndex="1" style="font-size:11px;color:black;fill:black;" y="15"><tspan style="font-weight:bold">Survived No</tspan><tspan dx="0">: 63.8 %</tspan></text></g><g zIndex="1" style="cursor:pointer;" transform="translate(3,85)"><text x="3" zIndex="1" style="font-size:11px;color:black;fill:black;" y="15"><tspan style="font-weight:bold">Survived Yes</tspan><tspan dx="0">: 36.2 %</tspan></text></g></g><g class="highcharts-legend" zIndex="7"><g zIndex="1"><g></g></g></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(245,160)" opacity="1" visibility="visible"><path fill="none" d="M 3.5 0.5 L 251.5 0.5 C 254.5 0.5 254.5 0.5 254.5 3.5 L 254.5 41.5 C 254.5 44.5 254.5 44.5 251.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)" width="254" height="44"></path><path fill="none" d="M 3.5 0.5 L 251.5 0.5 C 254.5 0.5 254.5 0.5 254.5 3.5 L 254.5 41.5 C 254.5 44.5 254.5 44.5 251.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)" width="254" height="44"></path><path fill="none" d="M 3.5 0.5 L 251.5 0.5 C 254.5 0.5 254.5 0.5 254.5 3.5 L 254.5 41.5 C 254.5 44.5 254.5 44.5 251.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)" width="254" height="44"></path><path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 251.5 0.5 C 254.5 0.5 254.5 0.5 254.5 3.5 L 254.5 41.5 C 254.5 44.5 254.5 44.5 251.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#7cb5ec" stroke-width="1"></path><text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="21"><tspan style="font-size: 10px">Survived No</tspan><tspan x="8" dy="16">Percentage of Passenger Survived: </tspan><tspan style="font-weight:bold" dx="0">63.8%</tspan></text></g><text x="590" text-anchor="end" zIndex="8" style="cursor:pointer;color:#909090;font-size:9px;fill:#909090;" y="395">Highcharts.com</text></svg></div></div>
+</body></html>
