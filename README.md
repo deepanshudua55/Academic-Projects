@@ -1,4 +1,4 @@
-# List of Academic Projects.
+# List of Useful Academic Projects.
 
 * [Algorithm CSE5311](https://github.com/srvuta/Academic-Projects/tree/master/Algorithms)
  1. [Web Crawler - Python](https://github.com/srvuta/Academic-Projects/tree/master/Algorithms)
